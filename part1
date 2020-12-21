@@ -2,10 +2,10 @@
 
 
 def get_formatted_name(first_name, last_name):
-	"""·µ»ØÕû½àµÄĞÕÃû"""
+	"""è¿”å›æ•´æ´çš„å§“å"""
 	full_name = first_name + ' ' + last_name
 	return full_name.title()
-	#¶¨ÒåÁËº¯Êıget_formatted_name£¬²¢¡±·µ»Ø¡°ÁËÕû½àµÄĞÕÃû¡£
+	#å®šä¹‰äº†å‡½æ•°get_formatted_nameï¼Œå¹¶â€è¿”å›â€œäº†æ•´æ´çš„å§“åã€‚
 	
 while True:
 	print("\nPlease tell me your name:")
