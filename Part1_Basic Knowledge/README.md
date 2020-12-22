@@ -1,7 +1,7 @@
 ##  **基础知识巩固篇**
 
 
-### 变量和类型（variable and type)
+### 变量和类型(variable and type)
 
 首先我们需要了解我们处理着怎样的变量以及其类型如何，因为不同类型的数据有不同的处理方法。以下是5种常见的类型。
 
@@ -10,9 +10,43 @@
 - 字符串(string)：`hi` ``hello`` 均是字符串，是以单引号或者双引号括起来的。**字符串有很多表示法，目前我只会前面的。**
 - 布尔型(bool): 布尔值只有`True`和`False`两种值。**注意在Python中都是首字母大写**。
 - 复数型(complex): 与数学意义的复数一样，仅仅把虚数部分的``i``换成了``j``。
+
+## 变量命名(naming a variable)
+
+变量的取名非常重要，因为编程语言里有自己的规则，一小处不一样可能从底层逻辑就已经错了。
+
+- 硬性要求：
+ - 变量名字由字母、数字、和下划线构成，数字不能开头。
+ - 大小写表示的含义不同。
+ - 不要和系统自留的关键字或者函数名等发生冲突。
+- PEP8的要求：
+ - 用小写字母拼写，多个单词用下划线连接。
+ - 受保护的实例属性用单个下划线开头（**暂时不懂**）。
+ - 私有的实例属性用两个下划线开头（**暂时不懂**）。
+ 
+## 变量的使用(variable usetage)
+
+```shell
+"""
+使用type()检查变量的类型
+"""
+
+a = 90
+b = 938.13
+c = True
+d = 98 + 4j
+e = "you are a genius"
+
+print(type(a))   # <class 'int'>
+print(type(b))   # <class 'float'>
+print(type(c))   # <class 'bool'>
+print(type(d))   # <class 'complex'>
+print(type(e))   # <class 'str'>
 ####  Windows下Python环境安装
 
 ####  运行第一行Python程序
+
+```
 
 ```shell
 print("Hello, World!")
