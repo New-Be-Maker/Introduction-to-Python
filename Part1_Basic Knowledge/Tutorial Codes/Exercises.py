@@ -42,7 +42,8 @@ else:
 print('f(%f) = %.2f' % (x,y))
 
 
-"""E2.2 Centenial system to level grade
+"""
+E2.2 Centenial system to level grade
 
 grade => 90, A | 80 =< grade < 90, B | 70 =< grade < 80, C | grade < 70，D
 
@@ -60,3 +61,16 @@ elif grade => 70:
 else:
   grade = "D"
 print("Your grade level is: ", grade) 
+
+"""
+E3.1 Make a multiplication table
+"""
+#Suggested solution
+
+for i in range(1,10)
+    for j in range(1 , 1 + i)
+       print("%d*%d=%d" % ( i,j,i*j ), end ='\t')
+    print() #try code with and with out this line
+#E3.1 is very typical and with a lot of typesets info, redo it some time.
+
+
