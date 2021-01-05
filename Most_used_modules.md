@@ -49,11 +49,39 @@ csv.writer()
 ```
 
 
-## Matplotlib(Install)
+## Matplotlib and Numpy(Install)
 **Matplotlib是Python的一个绘图库，可以在["官网下载"](<https://matplotlib.org/>)whl文件再安装，也可以点开一个Python终端，使用如下代码：**
-``python
+```python
 #我也不知道为什么此方法要安装几次才行，中途多次报错。Win系统还得安装visual studio才可以使用。
 python -m pip install -U pip
 python -m pip install -U matplotlib
 ```
+```python
+from matplotlib import pyplot as plt
 
+plt.title("Supply of Apple")   #图表标题
+plt.xlabel("Price")            #X轴名称
+plt.ylabel("Quantity")         #y轴名称
+plt.plot(x,y)                  #这里面还可以填很多参数，具体使用时再查
+plt.show()                     #展示图表
+
+plt.tick_params(axis,which,length,width,labelsize,labelcolor,etc.)
+#tick_params的用法非常广泛，大体上是把图表做得更好，具体参数的含义如下：
+"""
+axis : {‘x’, ‘y’, ‘both’} Axis on which to operate; default is ‘both’. （axis:轴）
+reset : bool If True, set all parameters to defaults before processing other keyword arguments. Default is False.
+which : {‘major’, ‘minor’, ‘both’} Default is ‘major’; apply arguments to which ticks.
+direction : {‘in’, ‘out’, ‘inout’} Puts ticks inside the axes, outside the axes, or both.
+length : float Tick length in points.
+width : float Tick width in points.
+color : color Tick color; accepts any mpl color spec.
+pad : float Distance in points between tick and label.
+labelsize : float or str Tick label font size in points or as a string (e.g., ‘large’).
+labelcolor : color Tick label color; mpl color spec.
+colors : color Changes the tick color and the label color to the same value: mpl color spec.
+zorder : float Tick and label zorder.
+bottom, top, left, right : bool or {‘on’, ‘off’} controls whether to draw the respective ticks.
+labelbottom, labeltop, labelleft, labelright : bool or {‘on’, ‘off’} controls whether to draw the respective tick labels.
+labelrotation : float Tick label rotation
+"""
+```
