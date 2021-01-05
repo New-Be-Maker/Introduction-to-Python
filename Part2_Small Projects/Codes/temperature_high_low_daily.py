@@ -27,7 +27,7 @@ plt.plot(dates, lows, c = 'red', alpha = 0.5)
 plt.fill_between(dates, highs, lows, facecolor='yellow', alpha=0.1)
 
 #To set graphics format
-plt.title("Daily High Temperature", fontsize=24)
+plt.title("Daily High and low Temperature - July 2014", fontsize=24)
 plt.xlabel("Date")
 fig.autofmt_xdate()
 plt.ylabel("Temperature(F)")
