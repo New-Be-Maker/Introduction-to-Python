@@ -17,4 +17,5 @@ Step 3: Use `matplotlib` tools to draw graphs.
 
 ## Phase 3: Dealing with the missing data and plot graphics.
 **You have done Phase 1 and Phase 2. However, what if the CSV data is damaged or missed. Then there will be some errors when we run codes. Try the same codes to analyze Death Valley Weather. 【file name: [death_valley_2014.csv](<https://github.com/New-Be-Maker/Introduction-to-Python/blob/main/Part2_Small%20Projects/Raw%20Data/death_valley_2014.csv>)】**
+
 There will be a missing data of 2014-02-16. Please use `try`;`except`and`else` to debug.
