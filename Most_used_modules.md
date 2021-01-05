@@ -39,13 +39,21 @@ datetime.combine(date, time)
 
 
 ## CSV(Python in-built)
-**CSV格式是纯文本存储的格式，一般用`with open('file path', 'r')`或者`with open('file path', 'r') as X`打开。
+**CSV格式是纯文本存储的格式，一般用`with open('file path', 'r')`或者`with open('file path', 'r') as X`打开。**
 
 ```python
 #返回一个读取器的对象
 csv.reader()
 #返回一个编写器的对象
 csv.writer()
+```
 
 
+## Matplotlib(Install)
+**Matplotlib是Python的一个绘图库，可以在["官网下载"](<https://matplotlib.org/>)whl文件再安装，也可以点开一个Python终端，使用如下代码：**
+``python
+#我也不知道为什么此方法要安装几次才行，中途多次报错。Win系统还得安装visual studio才可以使用。
+python -m pip install -U pip
+python -m pip install -U matplotlib
+```
 
