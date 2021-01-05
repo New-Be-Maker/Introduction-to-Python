@@ -1,27 +1,40 @@
 import csv
+from datetime import datetime 
+import matplotlib.pyplot as plt
 
-from matplotlib import pyplot as plt
-
-filename = 'sitka_weather_07.2014.csv'
-with open(filename) as f:
+#To analyze header of the raw data.
+with open('D:\sitka_weather_07.2014.csv') as f:
 	reader = csv.reader(f)
-	header_row = next(reader)  
-			
-	highs = []
+	header_row = next(reader)
+	
+#Data that I want to extract and deal with from the raw data.
+
+	dates, highs, lows = [], [], []
 	for row in reader:
-		high = int(row[1])
-		highs.append(row[1])
+	    current_date = datetime.strptime(row[0], "%Y-%m-%d")
+	    dates.append(current_date)
+	
+	    high = int(row[1])
+	    highs.append(high)
+	
+	    low = int(row[3])
+	    lows.append(low)
 
-fig = plt.figure(dpi=128, figsize=(10,6))
-plt.plot(highs, c= 'red')
+#Graphing table based on data	
+fig = plt.figure(dpi = 240, figsize=(16,9))
+plt.plot(dates, highs, c = 'blue', alpha = 0.5)
+plt.plot(dates, lows, c = 'red', alpha = 0.5)
+plt.fill_between(dates, highs, lows, facecolor='yellow', alpha=0.1)
 
-plt.title("Daily high temperatures, July 2014", fontsize=24)
-plt.xlabel('', fontsize=16)
-plt.ylabel("Temperature(F)", fontsize=16)
-plt.tick_params(axis='both', which= 'major', labelsize=16)
+#To set graphics format
+plt.title("Daily High Temperature", fontsize=24)
+plt.xlabel("Date")
+fig.autofmt_xdate()
+plt.ylabel("Temperature(F)")
+plt.tick_params(axis = "both", which = "major")
 
 plt.show()
-		
+
     
     
 
