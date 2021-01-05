@@ -38,4 +38,14 @@ datetime.combine(date, time)
 
 
 
+## CSV(Python in-built)
+**CSV格式是纯文本存储的格式，一般用`with open('file path', 'r')`或者`with open('file path', 'r') as X`打开。
+
+```python
+#返回一个读取器的对象
+csv.reader()
+#返回一个编写器的对象
+csv.writer()
+
+
 
