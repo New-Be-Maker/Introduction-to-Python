@@ -3,5 +3,7 @@
 In this exercise, a CSV file will be provided, which contains weather information of Sitka. 【file name: sitka_weather_07.2014.CSV】Try to programming to select daily highest and lowest temperature and plot them in a chart.  
 
 Step 1: To analyze header of the raw data. `with open` and `reader`.
+
 Step 2: Extract data what you want to analyze.Here are **Max TemperatureF**;**Min TemperatureF** and **AKDT**. Find their specific rows.
+
 Step 3: Use `matplotlib` tools to draw graphs.
