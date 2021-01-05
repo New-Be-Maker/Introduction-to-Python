@@ -7,10 +7,10 @@ def add(a,b):
 ```
 **下面就是常用的模块及使用方法
 
-## datetime(Python in-built)
+## 1.datetime(Python in-built)
 **datetime模块是重新封装了time模块，有更丰富的接口：date,time,datetime,timedelta,tzinfo.
 
-**1.datetime**
+**1.1.datetime**
 
 datetime.datetime (year, month, day[ , hour[ , minute[ , second[ , microsecond[ , tzinfo] ] ] ] ] )
 | 实参                                                      | 含义                           |
@@ -32,13 +32,13 @@ datetime.strptime(date_string, format)
 datetime.combine(date, time)
 ```
 
-**2.timedelta**
+**1.2.timedelta**
 
-**3.tzinfo**
+**1.3.tzinfo**
 
 
 
-## CSV(Python in-built)
+## 2.CSV(Python in-built)
 **CSV格式是纯文本存储的格式，一般用`with open('file path', 'r')`或者`with open('file path', 'r') as X`打开。**
 
 ```python
@@ -49,7 +49,7 @@ csv.writer()
 ```
 
 
-## Matplotlib and Numpy(Install)
+## 3.Matplotlib and Numpy(Install)
 **Matplotlib是Python的一个绘图库，可以在["官网下载"](<https://matplotlib.org/>)whl文件再安装，也可以点开一个Python终端，使用如下代码：**
 ```python
 #我也不知道为什么此方法要安装几次才行，中途多次报错。Win系统还得安装visual studio才可以使用。
@@ -64,9 +64,20 @@ plt.xlabel("Price")            #X轴名称
 plt.ylabel("Quantity")         #y轴名称
 plt.plot(x,y)                  #这里面还可以填很多参数，具体使用时再查
 plt.show()                     #展示图表
+plt.figure(num=None, figsize=None, dpi=None, facecolor=None, edgecolor=None, frameon=True)
+
+"""
+      num : 图像编号或名称，数字为编号，字符串为名称
+  figsize : 指定figure的宽和高，单位为英寸
+      dpi : 指定绘图对象的分辨率，即每英寸多少个像素，缺省值为80
+facecolor : 背景的颜色
+edgecolor : 边框颜色
+  frameon : 是否显示边框
+"""
 
 plt.tick_params(axis,which,length,width,labelsize,labelcolor,etc.)
 #tick_params的用法非常广泛，大体上是把图表做得更好，具体参数的含义如下：
+
 """
 axis : {‘x’, ‘y’, ‘both’} Axis on which to operate; default is ‘both’. 
 reset : bool If True, set all parameters to defaults before processing other keyword arguments. Default is False.
