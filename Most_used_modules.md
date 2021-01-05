@@ -5,4 +5,15 @@ Python的模块就像是工具包一样，如果要使用该工具包里的工�
 def add(a,b):
     return a + b
 ```
-## datetime
+**下面就是常用的模块及使用方法
+
+## datetime(Python in-built)
+**datetime模块是重新封装了time模块，有更丰富的接口：date,time,datetime,timedelta,tzinfo.
+
+**1.datetime**
+datetime.datetime (year, month, day[ , hour[ , minute[ , second[ , microsecond[ , tzinfo] ] ] ] ] )
+
+
+
+
+
