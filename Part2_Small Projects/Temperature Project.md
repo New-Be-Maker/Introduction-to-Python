@@ -10,5 +10,11 @@ Step 3: Use `matplotlib` tools to draw graphs.
 
 
 ## Phase 2: More data to be analyzed
+
 **You have learned Phase 1, then sitka weather info for the whole year 2014 will be given. Please try to analyze more on this raw data and make more beautiful tables.
-【file name: [sitka_weather_2014.CSV](<https://github.com/New-Be-Maker/Introduction-to-Python/blob/main/Part2_Small%20Projects/Raw%20Data/sitka_weather_2014.csv>)】
+【file name: [sitka_weather_2014.CSV](<https://github.com/New-Be-Maker/Introduction-to-Python/blob/main/Part2_Small%20Projects/Raw%20Data/sitka_weather_2014.csv>)】**
+
+
+## Phase 3: Dealing with the missing data and plot graphics.
+**You have done Phase 1 and Phase 2. However, what if the CSV data is damaged or missed. Then there will be some errors when we run codes. Try the same codes to analyze Death Valley Weather. 【file name: [death_valley_2014.csv](<https://github.com/New-Be-Maker/Introduction-to-Python/blob/main/Part2_Small%20Projects/Raw%20Data/death_valley_2014.csv>)】**
+There will be a missing data of 2014-02-16. Please use `try`;`except`and`else` to debug.
