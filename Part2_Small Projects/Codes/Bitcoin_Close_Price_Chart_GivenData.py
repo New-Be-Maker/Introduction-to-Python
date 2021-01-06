@@ -19,7 +19,7 @@ for bit_dict in bit_data:
 	close = int(float(bit_dict['close']))
 	
 dates,months,weeks,weekdays,close = [],[],[],[],[]
-#collect the final Lists we want to use. Those Lists will be drawn.
+
 for bit_dict in bit_data:
 	dates.append(bit_dict['date'])
 	months.append(int(bit_dict['month']))
@@ -32,11 +32,11 @@ for bit_dict in bit_data:
 
 import pygal
 
-line_chart = pygal.Line(x_label_rotation = 20, \
-show_mirror_x_labels = False)
+line_chart = pygal.Line(x_label_rotation=20, show_minor_x_labels=False)  
 line_chart.title = 'Close Price'
 line_chart.x_labels = dates
-N = 20 #the date gap on X-axis is 20 days.
-line_chart.x_labels_major = dates[::N]
-line_chart.add('close price', close)
+N = 20  
+line_chart.x_labels_major = dates[::N]  
+line_chart.add('Close Price', close)
 line_chart.render_to_file('Close price line chart.svg')
+
