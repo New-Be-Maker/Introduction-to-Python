@@ -29,6 +29,7 @@ def get_country_code(country_name):  # A solution?
     So,before we start everything, we need to check them. And adapt them if it is necessary.
     It is better to print COUNTRIES.items() first to check the standard format.
     """
+
     for country_code, name in COUNTRIES.items():
         if name == country_name:
             return country_code
