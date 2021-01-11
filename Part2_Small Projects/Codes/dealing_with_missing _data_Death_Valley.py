@@ -15,7 +15,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 # To analyze header of the raw data.
-with open('death_valley_2014.csv') as f:
+with open(r'..\raw data\death_valley_2014.csv') as f:
     reader = csv.reader(f)
     header_row = next(reader)  # How to understand this step?
 
