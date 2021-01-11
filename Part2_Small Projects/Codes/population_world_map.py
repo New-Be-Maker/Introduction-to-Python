@@ -37,7 +37,7 @@ def get_country_code(country_name):  # A solution?
     return None
 
 
-with open('population_data.json') as f:
+with open(r'..\clean data\population_data.json') as f:
     pop_data = json.load(f)
 
 # This dictionary is for later usage.
