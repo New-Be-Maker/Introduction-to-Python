@@ -16,7 +16,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 # To analyze header of the raw data.
-with open('sitka_weather_07.2014.csv') as f:
+with open(r'..\raw data\sitka_weather_07.2014.csv') as f:
     # we use reader for csv and load for json
     reader = csv.reader(f)
     header_row = next(reader)
