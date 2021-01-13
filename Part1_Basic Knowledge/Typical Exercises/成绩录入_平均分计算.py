@@ -26,6 +26,7 @@ courses = ['math', 'English', 'statistics']
 scores = [[0] * len(courses) for _ in range(len(names))]
 # scores = [[0] * len(courses)] * len(names)
 # 26与27行生成的列表长得一样，为什么最后会导致计算平均值时的不同？ 27行的结果很神奇？
+# 我用28行的代码试了一次，也是没问题的。
 
 print(scores)
 # 创建好了保存成绩的列表后，就要开始录入数据,先自查enumerate的含义。
