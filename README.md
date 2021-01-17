@@ -39,4 +39,4 @@
 |break        |
 |continue     |
 |return       |
-|class()      |
+|class()      |生成一个类
