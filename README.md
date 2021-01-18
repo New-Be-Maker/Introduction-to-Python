@@ -38,5 +38,5 @@
 |input()      |
 |break        |
 |continue     |
-|return       |
+|return       |返回一个值
 |class()      |生成一个类
