@@ -37,6 +37,6 @@
 |items()      |
 |input()      |
 |break        |
-|continue     |
+|continue     |继续
 |return       |返回一个值
 |class()      |生成一个类
